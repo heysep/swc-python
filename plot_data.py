@@ -39,6 +39,6 @@ for filename in filenames:
 
 	# save the figure to inflammation-xx.png
 	figname = filename.replace('csv', 'png')
-	plt.savefig(figname)
+	plt.savefig('fig/' + figname)
 	
 
