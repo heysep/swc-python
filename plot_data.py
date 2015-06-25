@@ -37,6 +37,8 @@ for filename in filenames:
 	# make the figure have a tight layout, no overlapping text
 	fig.tight_layout()
 
-	# show the figure
-	plt.show(fig)
+	# save the figure to inflammation-xx.png
+	figname = filename.replace('csv', 'png')
+	plt.savefig(figname)
+	
 
